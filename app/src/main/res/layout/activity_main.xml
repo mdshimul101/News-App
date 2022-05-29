@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Business"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Entertainment"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="General"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Health"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Science"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Sports"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/purple_700"
+                android:padding="5dp"
+                android:text="Technology"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="6dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            app:defaultQueryHint="Search News Here..."
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+        </androidx.appcompat.widget.SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
